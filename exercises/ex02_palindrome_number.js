@@ -11,7 +11,19 @@ Contraintes pédagogiques :
 */
 
 function isPalindrome(x) {
-  // TODO: écrire ton code ici
+    if (x < 0) {
+    return false;
+   } 
+var nb1 = x;
+var inverse = 0;
+
+  while (x > 0) {
+    var chiffre = x % 10;
+    inverse = inverse * 10 + chiffre;
+    x = Math.floor(x / 10);
+  }
+
+  return inverse === nb1;// TODO: écrire ton code ici
 
   // Indications (optionnelles) :
   // - Si x < 0 => false
