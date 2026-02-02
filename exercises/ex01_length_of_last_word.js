@@ -11,12 +11,27 @@ Contraintes pédagogiques :
 */
 
 function lengthOfLastWord(s) {
-  // TODO: écrire ton code ici
+  var taille = 0;
+  var i = s.length - 1;
+
+  
+  while (i >= 0 && s[i] === ' ') {
+    i--;
+  }
+
+  
+  while (i >= 0 && s[i] !== ' ') {
+    taille++;
+    i--;
+  }
+
+  return taille;
+}// TODO: écrire ton code ici
 
   // Astuce (optionnelle) :
   // 1) Ignorer les espaces à la fin
   // 2) Compter les caractères jusqu'au prochain espace ou le début
-}
+
 
 // --------------------
 // Tests (au moins 3)
