@@ -14,7 +14,19 @@ Contraintes pédagogiques :
 */
 
 function fizzBuzz(n) {
-  // TODO: écrire ton code ici
+  function fizzBuzz(n) {
+  for (var i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+}// TODO: écrire ton code ici
 
   // Indications (optionnelles) :
   // - Commencer par tester divisible par 3 ET 5
